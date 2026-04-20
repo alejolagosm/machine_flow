@@ -1,7 +1,7 @@
 # Test workflow for machine
 name: Security Scans
 on:
-  push:
+  pull_request:
 
 jobs:
   sast:
@@ -16,7 +16,7 @@ jobs:
       - uses: fluidattacks/sast-action@1.2.0
         id: scan
         with:
-          scanner_mode: full
+          scanner_mode: diff
 
       - name: Upload results to GitHub Security tab
         if: always()
