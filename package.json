@@ -4,6 +4,7 @@
     "@angular/core": "^13.3.3",
     "quill": "1.3.7",
     "cloudron-sysadmin": "1.0.0",
+    "openclaw": "2026.4.14",
     "script-manager": "0.8.6",
     "slug": "0.9.0",
     "ajv": "^8.12.0"
